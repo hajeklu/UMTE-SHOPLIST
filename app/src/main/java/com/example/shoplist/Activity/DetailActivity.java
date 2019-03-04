@@ -23,6 +23,12 @@ public class DetailActivity extends AppCompatActivity {
 
         Button button = findViewById(R.id.btnSaveDetail);
 
+        EditText co = findViewById(R.id.editTextCo);
+        EditText kde = findViewById(R.id.editTextKde);
+
+        co.setText(getIntent().getStringExtra("itemName"));
+        kde.setText(getIntent().getStringExtra("itemDesc"));
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

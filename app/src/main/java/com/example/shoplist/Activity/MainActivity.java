@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
     private IDAO dao = DAOListImpl.getInstanc();
     private LinearLayout linearLayout;
-    private static final int REQUEST_ADD = 1000;
-    private static final int REQUEST_EDIT = 2000;
+    public static final int REQUEST_ADD = 1000;
+    public static final int REQUEST_EDIT = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

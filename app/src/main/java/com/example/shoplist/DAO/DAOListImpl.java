@@ -47,6 +47,15 @@ public class DAOListImpl implements IDAO {
         item.setDescription("Muj sedmí ukol");
         items.add(item);
 
+        for(int i = 8; i < 180; i++){
+            item = new Item();
+            item.setName(i+"");
+            item.setDescription("Muj " + i + " ukol");
+            item.setDone(Math.random() < 0.5);
+            items.add(item);
+        }
+
+
     }
 
     public static DAOListImpl getInstanc(){
@@ -78,4 +87,15 @@ public class DAOListImpl implements IDAO {
     public void edit(Item item) {
 
     }
+
+    @Override
+    public void deleteByID(int id) {
+        items.remove(id);
+    }
+
+    @Override
+    public int getCount() {
+        return items.size();
+    }
+
 }

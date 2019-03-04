@@ -57,5 +57,4 @@ public class ItemView extends View {
     public void setOnDeleteClickListener(View.OnClickListener clickListener) {
         deletebtn.setOnClickListener(clickListener);
     }
-
 }
